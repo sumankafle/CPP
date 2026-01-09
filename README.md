@@ -1,5 +1,3 @@
-Here’s a clean, professional, and ATS-friendly README for your C++ practice repository:
-
 ```markdown
 # Modern C++ Practice Repository
 
