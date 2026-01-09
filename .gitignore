@@ -43,3 +43,16 @@
 
 # vscode configurations
 *.vscode
+
+# Keep directories
+!*/
+
+# Keep source files
+!*.cpp
+!*.h
+!*.hpp
+!*.md
+
+# Optional: keep build configs
+!Makefile
+!CMakeLists.txt
