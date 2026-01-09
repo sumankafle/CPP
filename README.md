@@ -1,4 +1,3 @@
-```markdown
 # Modern C++ Practice Repository
 
 This repository contains C++ projects and practice exercises focused on **modern C++** features and best practices. The goal of this repository is to strengthen my understanding of C++ concepts and improve my coding skills through hands-on projects.
