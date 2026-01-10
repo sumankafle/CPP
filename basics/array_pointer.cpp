@@ -23,8 +23,10 @@
  */
 int main()
 {
-    int numbers[5];   ///< Integer array with 5 elements
+    int numbers[5] = {};   ///< Integer array with 5 elements
     int* ptr;         ///< Pointer to integer
+
+    std::cout << *(&numbers)<< std::endl;
 
     // Pointer points to the first element of the array
     ptr = numbers;
@@ -52,6 +54,9 @@ int main()
     {
         std::cout << numbers[i] << ", ";
     }
+
+    // Print array elements
+    std::cout << *(&numbers)<< std::endl;
 
     return EXIT_SUCCESS;
 }
