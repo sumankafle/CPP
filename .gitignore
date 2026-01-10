@@ -36,8 +36,6 @@
 *.exe
 *.out
 *.app
-*.*
-**/*
 
 
 # debug information files
@@ -58,3 +56,9 @@
 # Optional: keep build configs
 !Makefile
 !CMakeLists.txt
+
+# ----------------------------
+# Ignore everything by default
+# ----------------------------
+# All files (this will be overridden for specific files we want to keep)
+*  
