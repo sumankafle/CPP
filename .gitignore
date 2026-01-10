@@ -42,7 +42,7 @@
 *.dwo
 
 # vscode configurations
-*.vscode
+!.vscode
 
 # Keep directories
 !*/
