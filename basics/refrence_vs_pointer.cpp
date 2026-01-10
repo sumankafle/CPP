@@ -40,10 +40,10 @@ int main()
     std::cout << *ptr << '\n';
 
     // Modify x using pointer
-    *ptr = 7;
-    std::cout << x;
+    *ptr = 7;  // use the pointer to change the value of x
+    std::cout << x;  // use the reference to print x's value (7)
     std::cout << ref;
-    std::cout << *ptr << '\n';
+    std::cout << *ptr << '\n'; // use the pointer to print x's value (7)
 
     return 0;
 }
