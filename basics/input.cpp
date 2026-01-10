@@ -23,11 +23,12 @@
  */
 int main()
 {
-    int a;  ///< Integer variable to store user input
+    int a{};  ///< Integer variable to store user input
 
     // Read an integer value from the user
     std::cout << "Enter an integer value for variable a: ";
     std::cin >> a;
+    std::cout << "You entered: " << a << std::endl;
 
     std::string name;     ///< Stores user's first name
     std::string surname;  ///< Stores user's surname
