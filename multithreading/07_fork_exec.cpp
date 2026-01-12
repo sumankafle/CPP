@@ -1,5 +1,5 @@
 /**
- * @file fork_exec_args.cpp
+ * @file fork_exec.cpp
  * @brief Demonstrates fork() + exec() using command-line arguments.
  *
  * The program forks a child process. The child replaces itself
