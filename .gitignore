@@ -1,3 +1,24 @@
+# ----------------------------
+# Ignore everything by default
+# ----------------------------
+# All files (this will be overridden for specific files we want to keep)
+*  
+# Keep directories
+!*/
+
+# vscode configurations
+!.vscode
+
+# Keep source files
+!*.cpp
+!*.h
+!*.hpp
+!*.md
+
+# Optional: keep build configs
+!Makefile
+!CMakeLists.txt
+
 # Prerequisites
 *.d
 
@@ -40,25 +61,3 @@
 
 # debug information files
 *.dwo
-
-# vscode configurations
-!.vscode
-
-# Keep directories
-!*/
-
-# Keep source files
-!*.cpp
-!*.h
-!*.hpp
-!*.md
-
-# Optional: keep build configs
-!Makefile
-!CMakeLists.txt
-
-# ----------------------------
-# Ignore everything by default
-# ----------------------------
-# All files (this will be overridden for specific files we want to keep)
-*  
