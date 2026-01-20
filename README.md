@@ -19,7 +19,7 @@ I am actively practicing **modern C++** techniques including:
 
 ```
 
-/cpp-modern-practice
+/cpp
 │
 ├─ /basics           # Simple programs to understand syntax and control flow
 ├─ /oop              # Object-Oriented Programming exercises
