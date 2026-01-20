@@ -10,7 +10,7 @@
 !.vscode
 
 # vscode configurations
-!.sh
+!*.sh
 
 # Keep source files
 !*.cpp
