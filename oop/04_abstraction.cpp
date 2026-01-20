@@ -1,5 +1,5 @@
 /**
- * @file abstraction_example.cpp
+ * @file abstraction.cpp
  * @brief Demonstrates abstraction in C++ using abstract classes and pure virtual functions.
  *
  * Abstraction is the process of hiding implementation details and exposing only
@@ -8,7 +8,7 @@
  * The derived class `Car` provides concrete implementations of the abstract methods.
  *
  * @author Suman
- * @date 2026
+ * @date 16/08/2025
  */
 
 #include <iostream>

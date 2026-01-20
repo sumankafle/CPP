@@ -10,7 +10,7 @@
  * - Encapsulation via private data members
  *
  * @author Suman
- * @date 2026
+ * @date 16/08/2025
  */
 
 #include <iostream>
@@ -90,7 +90,7 @@ public:
         // Delete copy constructor and assignment to prevent double-delete
     MyDetails(const MyDetails&) = delete;
     MyDetails& operator=(const MyDetails&) = delete;
-    
+
 };
 
 /**
