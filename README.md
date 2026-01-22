@@ -22,6 +22,7 @@ I am actively practicing **modern C++** techniques including:
 /cpp
 │
 ├─ /basics           # Simple programs to understand syntax and control flow
+├─ /gui               # Graphical User Interface examples
 ├─ /oop              # Object-Oriented Programming exercises
 ├─ /stl              # STL containers and algorithms practice
 ├─ /memory           # Smart pointers and dynamic memory examples
