@@ -1,21 +1,22 @@
 #!/bin/bash
-/**
- * @file delete_executables.sh
- * @brief Recursively finds and deletes C++ executables matching compiled .cpp files.
- *
- * This script searches for all .cpp source files in the current directory
- * and its subdirectories. For each .cpp file found, it checks if a corresponding
- * executable exists (with the same name but no extension) and deletes it.
- *
- * Usage:
- *   chmod +x delete_executables.sh
- *   ./delete_executables.sh
- *
- * @author Suman
- * @date January 20, 2026
- */
-
-# Base folder (current directory)
+#/**
+ #* @file delete_executables.sh
+ #* @brief Recursively finds and deletes C++ executables matching compiled .cpp files.
+ #*
+ #* This script searches for all .cpp source files in the current directory
+ #* and its subdirectories. For each .cpp file found, it checks if a corresponding
+ #* executable exists (with the same name but no extension) and deletes it.
+ #*
+ #* Usage:
+ #*   chmod +x delete_executables.sh
+ #*   ./delete_executables.sh
+ #*
+ #* @author Suman
+ #* @date January 20, 2026
+ #*/
+# Set the script to exit on any errors
+set -e
+# Base folder to start the search
 BASE_DIR="."
 
 # Find all .cpp files recursively
