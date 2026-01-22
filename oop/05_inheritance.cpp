@@ -1,5 +1,5 @@
 /**
- * @file inheritance_example.cpp
+ * @file inheritance.cpp
  * @brief Demonstrates inheritance in C++ using a simple Animal-Dog hierarchy.
  *
  * Inheritance allows a class (derived class) to acquire the properties
@@ -12,7 +12,7 @@
  * - Reusability: Derived classes reuse existing code in base classes
  *
  * @author Suman
- * @date 2026
+ * @date   16/08/2025
  */
 
 #include <iostream>

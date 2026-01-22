@@ -87,7 +87,7 @@ public:
         return age;
     }
 
-        // Delete copy constructor and assignment to prevent double-delete
+    // Delete copy constructor and assignment to prevent double-delete
     MyDetails(const MyDetails&) = delete;
     MyDetails& operator=(const MyDetails&) = delete;
 
