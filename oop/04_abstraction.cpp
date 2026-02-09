@@ -65,8 +65,7 @@ public:
     /**
      * @brief Applies brakes to the car.
      */
-    void brake() override {
-        cout << "Car: Applying brakes..." << endl;
+    void brake() override {        cout << "Car: Applying brakes..." << endl;
     }
 };
 
