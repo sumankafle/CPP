@@ -1,9 +1,10 @@
+
 /**
  * @file mainwindow.h
  * @brief Main window for the Qt coffee demo.
  */
-#pragma once
 
+#pragma once
 #include <QMainWindow>
 #include <QPushButton>
 #include <QLabel>
@@ -12,11 +13,16 @@
 #include <QRadioButton>
 #include <QButtonGroup>
 #include <QTimer>
+
 #include "coffee_fsm.h"
 
 class MainWindow : public QMainWindow {
+    Q_OBJECT
 public:
     explicit MainWindow(QWidget *parent = nullptr);
+
+public slots:
+    void onStateChanged(const QString &s);
 
 private:
     CoffeeFSM *m_fsm;

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suman/Desktop/CPP/qt_coffee
+CMAKE_SOURCE_DIR = /home/suman/Desktop/CPP/gui/AnalogClock
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suman/Desktop/CPP/qt_coffee/build
+CMAKE_BINARY_DIR = /home/suman/Desktop/CPP/gui/AnalogClock/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suman/Desktop/CPP/qt_coffee/build/CMakeFiles /home/suman/Desktop/CPP/qt_coffee/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suman/Desktop/CPP/gui/AnalogClock/build/CMakeFiles /home/suman/Desktop/CPP/gui/AnalogClock/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suman/Desktop/CPP/qt_coffee/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suman/Desktop/CPP/gui/AnalogClock/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,89 +117,102 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named qt_coffee
+# Target rules for targets named analogclock
 
 # Build rule for target.
-qt_coffee: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_coffee
-.PHONY : qt_coffee
+analogclock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 analogclock
+.PHONY : analogclock
 
 # fast build rule for target.
-qt_coffee/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/build
-.PHONY : qt_coffee/fast
+analogclock/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/build
+.PHONY : analogclock/fast
 
-src/coffee_fsm.o: src/coffee_fsm.cpp.o
-.PHONY : src/coffee_fsm.o
+#=============================================================================
+# Target rules for targets named analogclock_autogen
 
-# target to build an object file
-src/coffee_fsm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/coffee_fsm.cpp.o
-.PHONY : src/coffee_fsm.cpp.o
+# Build rule for target.
+analogclock_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 analogclock_autogen
+.PHONY : analogclock_autogen
 
-src/coffee_fsm.i: src/coffee_fsm.cpp.i
-.PHONY : src/coffee_fsm.i
+# fast build rule for target.
+analogclock_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock_autogen.dir/build.make CMakeFiles/analogclock_autogen.dir/build
+.PHONY : analogclock_autogen/fast
 
-# target to preprocess a source file
-src/coffee_fsm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/coffee_fsm.cpp.i
-.PHONY : src/coffee_fsm.cpp.i
-
-src/coffee_fsm.s: src/coffee_fsm.cpp.s
-.PHONY : src/coffee_fsm.s
-
-# target to generate assembly for a file
-src/coffee_fsm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/coffee_fsm.cpp.s
-.PHONY : src/coffee_fsm.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+analogclock.o: analogclock.cpp.o
+.PHONY : analogclock.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+analogclock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/analogclock.cpp.o
+.PHONY : analogclock.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+analogclock.i: analogclock.cpp.i
+.PHONY : analogclock.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+analogclock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/analogclock.cpp.i
+.PHONY : analogclock.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+analogclock.s: analogclock.cpp.s
+.PHONY : analogclock.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+analogclock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/analogclock.cpp.s
+.PHONY : analogclock.cpp.s
 
-src/mainwindow.o: src/mainwindow.cpp.o
-.PHONY : src/mainwindow.o
+analogclock_autogen/mocs_compilation.o: analogclock_autogen/mocs_compilation.cpp.o
+.PHONY : analogclock_autogen/mocs_compilation.o
 
 # target to build an object file
-src/mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/mainwindow.cpp.o
-.PHONY : src/mainwindow.cpp.o
+analogclock_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/analogclock_autogen/mocs_compilation.cpp.o
+.PHONY : analogclock_autogen/mocs_compilation.cpp.o
 
-src/mainwindow.i: src/mainwindow.cpp.i
-.PHONY : src/mainwindow.i
+analogclock_autogen/mocs_compilation.i: analogclock_autogen/mocs_compilation.cpp.i
+.PHONY : analogclock_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-src/mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/mainwindow.cpp.i
-.PHONY : src/mainwindow.cpp.i
+analogclock_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/analogclock_autogen/mocs_compilation.cpp.i
+.PHONY : analogclock_autogen/mocs_compilation.cpp.i
 
-src/mainwindow.s: src/mainwindow.cpp.s
-.PHONY : src/mainwindow.s
+analogclock_autogen/mocs_compilation.s: analogclock_autogen/mocs_compilation.cpp.s
+.PHONY : analogclock_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-src/mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qt_coffee.dir/build.make CMakeFiles/qt_coffee.dir/src/mainwindow.cpp.s
-.PHONY : src/mainwindow.cpp.s
+analogclock_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/analogclock_autogen/mocs_compilation.cpp.s
+.PHONY : analogclock_autogen/mocs_compilation.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analogclock.dir/build.make CMakeFiles/analogclock.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -209,16 +222,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... qt_coffee"
-	@echo "... src/coffee_fsm.o"
-	@echo "... src/coffee_fsm.i"
-	@echo "... src/coffee_fsm.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/mainwindow.o"
-	@echo "... src/mainwindow.i"
-	@echo "... src/mainwindow.s"
+	@echo "... analogclock_autogen"
+	@echo "... analogclock"
+	@echo "... analogclock.o"
+	@echo "... analogclock.i"
+	@echo "... analogclock.s"
+	@echo "... analogclock_autogen/mocs_compilation.o"
+	@echo "... analogclock_autogen/mocs_compilation.i"
+	@echo "... analogclock_autogen/mocs_compilation.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

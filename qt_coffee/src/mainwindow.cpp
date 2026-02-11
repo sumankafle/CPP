@@ -1,8 +1,8 @@
 /**
  * @file mainwindow.cpp
  * @brief GUI implementation wiring UI controls to the FSM.
- */
-#include "../include/mainwindow.h"
+
+#include "mainwindow.h"
 #include <QGridLayout>
 #include <QLabel>
 
@@ -80,20 +80,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(m_start, &QPushButton::clicked, this, [this]{ m_fsm->startBrew(); });
     connect(m_reset, &QPushButton::clicked, this, [this]{ m_fsm->reset(); });
 
+    // route FSM state updates to a queued slot on the GUI thread
     m_fsm->setStateCallback([this](const QString &s){
-        QString drinkName;
-        switch(m_fsm->currentDrink()){
-        case CoffeeFSM::Espresso: drinkName = "Espresso"; break;
-        case CoffeeFSM::Latte: drinkName = "Latte"; break;
-        case CoffeeFSM::Cappuccino: drinkName = "Cappuccino"; break;
-        case CoffeeFSM::Americano: drinkName = "Americano"; break;
-        case CoffeeFSM::Mocha: drinkName = "Mocha"; break;
-        case CoffeeFSM::FlatWhite: drinkName = "FlatWhite"; break;
-        default: drinkName = ""; break;
-        }
-        QString s2 = s;
-        if(m_fsm->currentDrink() != CoffeeFSM::None) s2 += " (" + drinkName + ")";
-        m_status->setText(QString("State: %1").arg(s2));
+        QTimer::singleShot(0, this, [this, s]{ onStateChanged(s); });
     });
 
     // temperature simulation
@@ -120,4 +109,21 @@ MainWindow::MainWindow(QWidget *parent)
     m_fsm->setExtraMilk(m_extraMilk->isChecked());
     m_fsm->setOatsMilk(m_oatsMilk->isChecked());
     m_fsm->setWarmWater(m_warmWater->isChecked());
+}
+
+void MainWindow::onStateChanged(const QString &s)
+{
+    QString drinkName;
+    switch(m_fsm->currentDrink()){
+    case CoffeeFSM::Espresso: drinkName = "Espresso"; break;
+    case CoffeeFSM::Latte: drinkName = "Latte"; break;
+    case CoffeeFSM::Cappuccino: drinkName = "Cappuccino"; break;
+    case CoffeeFSM::Americano: drinkName = "Americano"; break;
+    case CoffeeFSM::Mocha: drinkName = "Mocha"; break;
+    case CoffeeFSM::FlatWhite: drinkName = "FlatWhite"; break;
+    default: drinkName = ""; break;
+    }
+    QString s2 = s;
+    if(m_fsm->currentDrink() != CoffeeFSM::None) s2 += " (" + drinkName + ")";
+    m_status->setText(QString("State: %1").arg(s2));
 }
